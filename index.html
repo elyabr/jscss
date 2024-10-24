@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Desenvolvimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="study-section" class="study-section">
+            <h1>Estude antes de responder</h1>
+            <p>Desenvolvimento de software é dividido entre Front-end e Back-end. O Front-end lida com a interface e a experiência do usuário, utilizando tecnologias como HTML, CSS e JavaScript. O Back-end envolve o servidor, banco de dados e lógica da aplicação, utilizando linguagens como Python, PHP, e frameworks como Node.js. Conheça também os frameworks de Front-end como React, Angular, e Vue.js.</p>
+            <button onclick="startQuiz()">Começar Quiz</button>
+        </div>
+
+        <div id="quiz-section" class="quiz-section hidden">
+            <h1>Quiz de Desenvolvimento</h1>
+            <div id="question1" class="question">
+                <p>1. Qual linguagem é usada no Front-end?</p>
+                <button onclick="checkAnswer(1, 'correto')">HTML</button>
+                <button onclick="checkAnswer(1, 'incorreto')">Python</button>
+            </div>
+
+            <div id="question2" class="question hidden">
+                <p>2. Qual é um framework de JavaScript?</p>
+                <button onclick="checkAnswer(2, 'correto')">React</button>
+                <button onclick="checkAnswer(2, 'incorreto')">Django</button>
+            </div>
+
+            <div id="question3" class="question hidden">
+                <p>3. Qual linguagem é usada no Back-end?</p>
+                <button onclick="checkAnswer(3, 'correto')">Node.js</button>
+                <button onclick="checkAnswer(3, 'incorreto')">CSS</button>
+            </div>
+
+            <div id="result-section" class="hidden">
+                <p id="result"></p>
+                <button onclick="resetQuiz()">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
